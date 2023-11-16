@@ -12,7 +12,7 @@ import Zoom from 'react-reveal/Zoom';
 
 const Home = () => {
     const downloadResume = () => {
-        const resumeFilePath = process.env.PUBLIC_URL + '../assets/resume.pdf';
+        const resumeFilePath = process.env.PUBLIC_URL + './src/assets/resume.pdf';
 
         fetch(resumeFilePath)
             .then(response => response.blob())
