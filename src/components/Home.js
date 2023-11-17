@@ -12,23 +12,7 @@ import Zoom from 'react-reveal/Zoom';
 
 const Home = () => {
     const downloadResume = () => {
-        const resumeFilePath = process.env.PUBLIC_URL + './src/assets/resume.pdf';
-
-        fetch(resumeFilePath)
-            .then(response => response.blob())
-            .then(blob => {
-                const url = window.URL.createObjectURL(new Blob([blob]));
-                const a = document.createElement('a');
-
-                a.href = url;
-                a.download = 'BryantResume.pdf'; 
-                document.body.appendChild(a);
-            
-                a.click();
-
-                window.URL.revokeObjectURL(url);
-                document.body.removeChild(a);
-            });
+        window.open('https://drive.google.com/uc?export=download&id=1J5SoBJyeCKVa-pCPnBXjBBmMug9gwYSC', '_blank');
     };
 
     return (
