@@ -12,7 +12,7 @@ import Zoom from 'react-reveal/Zoom';
 
 const Home = () => {
     const downloadResume = () => {
-        window.open('https://drive.google.com/uc?export=download&id=1J5SoBJyeCKVa-pCPnBXjBBmMug9gwYSC', '_blank');
+        window.open('https://drive.google.com/uc?export=download&id=1HAgq8M4dAquvs-b3stJKPW3BboAyYGcC', '_blank');
     };
 
     return (
